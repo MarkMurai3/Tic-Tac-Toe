@@ -21,6 +21,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: monospace;
+    font-size: 10vh;
+}
+.btw{
+    font-size: 4vh;
 }
 .welcome{
     display: flex;
@@ -61,6 +66,31 @@ body{
     display: flex;
     justify-content: center;
 }
+/* .x span{
+    display: block;
+    height:3px;
+    background-color: black;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+} */
+.x {
+    left: 50%;
+    background: none;
+    width: 45px;
+    border: none;
+    cursor:pointer;
+    outline: none;
+    z-index: 999;
+    position: relative;
+}
+/* .x span:nth-child(1){
+    transform: rotate(45deg);
+}
+.x span:nth-child(2){
+    transform: rotate(-45deg) translateX(10px) translateY(-9px);
+
+} */
 @media only screen and (max-width: 500px){
     .grid-item{
         height: 100px;
