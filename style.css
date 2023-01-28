@@ -9,12 +9,13 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    /* height: 77vh; */
 }
 .grids{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     padding: 5vh 0;
+    justify-content: center;
+    align-items: center;
 }
 .grid-item{
     height: 150px;
@@ -23,10 +24,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Dejavu Sans Mono', monospace;
+    font-family: monospace;
     font-variant-numeric: tabular-nums lining-nums;
     font-kerning:none;
     font-size: 10vh;
+    cursor: pointer;
 }
 .btw{
     font-size: 4vh;
@@ -36,27 +38,17 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 7vw;
-    font-family: 'Dejavu Sans Mono', monospace;
-    font-variant-numeric: tabular-nums lining-nums;
-    font-kerning:none;
+    font-family: monospace;
+    /* font-variant-numeric: tabular-nums lining-nums;
+    font-kerning:none; */
     text-align: center;
     flex-direction: column;
 }
 .w2{
     font-size: medium;
 }
-.turn{
-    justify-content: center;
-    align-items:flex-end;
-    display: flex;
-    font-family: 'Dejavu Sans Mono', monospace;
-    font-variant-numeric: tabular-nums lining-nums;
-    font-kerning:none;
-    font-size: 5vw;
-    padding-top: 5vh;
-    color:brown;
-}
-.remove-top-border{
+
+/* .remove-top-border{
     border-top: 0;
 }
 .remove-left-border{
@@ -67,7 +59,7 @@ body{
 }
 .remove-bottom-border{
     border-bottom: 0;
-}
+} */
 .footer{
     height: 4vh;
     width: 100vw;

@@ -1,9 +1,16 @@
-$('.grid-item').html("O");
-document.getElementsByClassName("grid-item")[0].innerHTML = 'X';
-document.getElementsByClassName("grid-item")[4].innerHTML = 'X'
-document.getElementsByClassName("grid-item")[8].innerHTML = 'X'
+const gridItem = document.querySelectorAll('.grid-item');
+let player = 'X';
 
-// for(var i = 0; i < buttons.length; i++){
-//   buttons[i].classList.add('hidden');
-// }
-
+for (const squares of gridItem){
+    squares.addEventListener('click', function(){
+        if (squares.textContent === ''){
+            squares.textContent = player;
+            if (player == 'X'){
+                player = 'O';
+            }
+            else {
+                player = 'X';
+            }
+        }
+    });
+}
